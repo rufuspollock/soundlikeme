@@ -22,18 +22,48 @@ Read the voice profile before proceeding.
 
 ## Step 2: Apply Concise Writing Rules
 
-Regardless of the voice profile, apply these baseline rules. They override the voice profile if there is a conflict.
+Regardless of the voice profile, apply these baseline rules. They override the voice profile if there is a conflict. (Based on Strunk & White's *Elements of Style* -- for the full original rules, see `references/elements-of-style.md` if available, or install from [github.com/obra/the-elements-of-style](https://github.com/obra/the-elements-of-style).)
 
-1. **Omit needless words.** Cut filler. "In order to" becomes "to." "At this point in time" becomes "now."
-2. **Use concrete, specific language.** "Revenue grew 30%" not "significant revenue growth was achieved."
-3. **Prefer active voice.** "We shipped it" not "it was shipped by the team."
-4. **Lead with the point.** State the conclusion first, then support it.
-5. **One idea per sentence.** Split sentences that carry two ideas.
-6. **Don't hedge.** "X causes Y" not "X may potentially have an impact on Y." If genuinely uncertain, say so directly.
-7. **Use plain words.** "Use" not "utilise." "Help" not "facilitate." "Method" not "methodology."
-8. **Cut qualifiers.** "Very", "really", "quite", "somewhat" almost always weaken a sentence. Remove them.
-9. **Vary sentence length** but default to short.
-10. **No filler transitions.** Cut "Furthermore", "Moreover", "Indeed", "It's important to note that."
+1. **Omit needless words.** Every word must earn its place. Cut filler phrases entirely.
+   - "in order to" -> "to"
+   - "the question as to whether" -> "whether"
+   - "he is a man who" -> "he"
+   - "the reason why is that" -> "because"
+
+2. **Use concrete, specific language.** Vague claims hide weak thinking. Pin things down.
+   - Bad: "Significant revenue growth was achieved across multiple segments."
+   - Good: "Revenue grew 30% in Q3, driven by enterprise sales."
+
+3. **Prefer active voice.** Active voice is shorter and clearer. Use passive only when the actor is unknown or irrelevant.
+   - Bad: "The feature was shipped by the team after testing was completed."
+   - Good: "The team shipped the feature after testing."
+
+4. **Lead with the point.** State your conclusion, then support it. Don't make the reader wait.
+   - Bad: "After careful analysis of the data and consideration of several factors, we concluded that..."
+   - Good: "We should cancel the project. The data shows..."
+
+5. **Put statements in positive form.** Say what something *is*, not what it *isn't*. Negatives are harder to parse.
+   - Bad: "He was not very often on time."
+   - Good: "He usually came late."
+
+6. **One idea per sentence.** If a sentence carries two ideas, split it. If a paragraph drifts to a second topic, break it.
+
+7. **Don't hedge unless genuinely uncertain.** Hedging weakens everything around it.
+   - Bad: "This may potentially have an impact on performance."
+   - Good: "This slows performance." (Or if uncertain: "I'm not sure whether this affects performance.")
+
+8. **Use plain words.** Fancy synonyms don't make you sound smarter.
+   - "use" not "utilise" / "help" not "facilitate" / "method" not "methodology" / "start" not "commence" / "about" not "with regard to"
+
+9. **Cut qualifiers.** "Very", "really", "quite", "somewhat", "fairly" almost always weaken. Remove them and see if the sentence is better. It usually is.
+
+10. **Vary sentence length for rhythm.** Default to short. Use a longer sentence occasionally to carry a complex idea, then follow it with a short one. This creates pace.
+
+11. **Place emphatic words at the end.** The end of a sentence carries the most weight.
+    - Weak: "Failure was, in the end, the result."
+    - Strong: "In the end, the result was failure."
+
+12. **No filler transitions.** "Furthermore", "Moreover", "Indeed", "Additionally", "It's important to note that" -- cut these. If the next sentence follows logically, it doesn't need a signpost.
 
 ## Step 3: Ban AI Anti-Patterns
 
