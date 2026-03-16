@@ -24,3 +24,40 @@ npx skills add rufuspollock/soundlikeme/skills/write-like-me
 ```
 
 This works with Claude Code, Cursor, GitHub Copilot, and [other agents that support the agentskills.io spec](https://skills.sh/).
+
+---
+
+## Social Posts
+
+### X/Twitter (variations)
+
+**Version 1:**
+
+I built two agent skills to make AI writing sound like me instead of like AI.
+
+- Point it at your existing writing, it extracts a voice profile
+- Distilled Strunk & White rules baked in
+- Explicit banlist for AI slop ("delve", "landscape", snappy triads)
+- Load on demand at the polish step, not at conversation start
+
+Early prototype. Open source, agentskills.io spec.
+
+🔗 [link]
+
+**Version 2:**
+
+AI writes like AI. I want it to write like me.
+
+So I made "Sound Like Me" -- two agent skills that extract a voice profile from your writing samples, then apply it when you want polished output. Also bans the worst AI tics and enforces concise writing rules.
+
+Works with Claude Code, Cursor, Copilot.
+
+🔗 [link]
+
+**Version 3:**
+
+The hard part of writing with AI isn't getting it to write. It's getting it to sound like you.
+
+Built a prototype: feed it a few blog posts, it extracts your voice into a 500-word profile. Then load it on demand to polish drafts. Plus distilled Strunk & White + an AI-slop banlist.
+
+Open source: [link]
