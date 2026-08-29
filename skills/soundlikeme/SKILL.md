@@ -13,23 +13,15 @@ metadata:
 
 Two separate jobs live here. Do not confuse them.
 
-**Removing AI tells** is a floor. Anyone can do it, the patterns are public, and a draft
-with every tell removed can still sound like nobody at all.
+**Removing AI tells** is a floor. Anyone can do it, the patterns are public, and a draft with every tell removed can still sound like nobody at all.
 
-**Sounding like a specific person** is the actual work. It needs a profile, and it needs
-restraint — most of what makes writing sound like someone is what you leave alone.
+**Sounding like a specific person** is the actual work. It needs a profile, and it needs restraint — most of what makes writing sound like someone is what you leave alone.
 
 ## The two rules that matter most
 
-**1. Minimum effective edit.** Change only spans with a confirmed defect, using the
-smallest repair that fixes it. Copy every other sentence byte-for-byte, in its original
-order and paragraph. With no findings, return the input exactly. A rough draft with a real
-voice must still sound like the same person afterwards.
+**1. Minimum effective edit.** Change only spans with a confirmed defect, using the smallest repair that fixes it. Copy every other sentence byte-for-byte, in its original order and paragraph. With no findings, return the input exactly. A rough draft with a real voice must still sound like the same person afterwards.
 
-**2. A match is not a license.** Finding a banned word does not authorize an edit. Check
-`references/protections.md` first. Prefer a no-op to an uncertain edit. Over-editing
-produces clipped, opinion-flattened anti-slop prose, which is its own detectable style and
-a worse failure than the slop.
+**2. A match is not a license.** Finding a banned word does not authorize an edit. Check `references/protections.md` first. Prefer a no-op to an uncertain edit. Over-editing produces clipped, opinion-flattened anti-slop prose, which is its own detectable style and a worse failure than the slop.
 
 ## Routing
 
@@ -68,8 +60,7 @@ These differ by an order of magnitude. Pick deliberately.
 | `polish` / `draft` | the above plus concision, profile, self-check | ~8.5k tokens |
 | `polish --deep` | the above plus the full 1918 Strunk text | ~26k tokens |
 
-Use `--deep` for writing that will be published under the user's name and read by people
-who know their work. Not for a Slack message.
+Use `--deep` for writing that will be published under the user's name and read by people who know their work. Not for a Slack message.
 
 ## Profiles
 
@@ -81,12 +72,9 @@ Profiles live in `profiles/<name>.md`. Resolution order:
 
 ## Bounded passes
 
-Two passes, then stop. The first removes obvious patterns; the second catches tells the
-first pass introduced — recycled transitions, new staccato rhythm, flattened opinions.
-Then run `references/self-check.md` once and fix what it catches.
+Two passes, then stop. The first removes obvious patterns; the second catches tells the first pass introduced — recycled transitions, new staccato rhythm, flattened opinions. Then run `references/self-check.md` once and fix what it catches.
 
-Do not loop. Grinding a third and fourth pass makes prose worse, not better, and burns the
-user's money doing it.
+Do not loop. Grinding a third and fourth pass makes prose worse, not better, and burns the user's money doing it.
 
 ## References
 

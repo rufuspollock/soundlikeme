@@ -77,6 +77,4 @@ Measured from the samples and the held-out pieces. Approximate.
 
 ## Notes
 
-Samples span 2008-2018; the held-out eval pieces are 2009 and 2011. Register is consistent
-across that range but the earlier pieces are denser with economics vocabulary. Worth a
-separate profile if drafting for a general audience.
+Samples span 2008-2018; the held-out eval pieces are 2009 and 2011. Register is consistent across that range but the earlier pieces are denser with economics vocabulary. Worth a separate profile if drafting for a general audience.

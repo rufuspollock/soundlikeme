@@ -23,6 +23,7 @@ Two separate jobs live in here and the repo is careful not to conflate them. Rem
 
 ## Conventions
 
+- **Never line-wrap Markdown.** One paragraph is one line, however long. This holds everywhere — files in this repo, GitHub issue and PR bodies, and comments. Hard-wrapped prose makes diffs useless (change three words and the whole paragraph re-flows), makes editing in a browser textarea miserable, and buys nothing: every renderer and editor soft-wraps already. Wrap only where the line break is content — list items, table rows, code blocks, and deliberate `<br>`-style breaks in verse or address blocks.
 - **American spelling.** Rufus writes American English (organize, skeptical, defense, analyze, license). This holds for repo prose and for anything the skill produces under his profile. Watch for British forms leaking in — `-ise` verbs and `-our` nouns are the usual culprits.
 - **The banlist is not the product.** It has converged across every project in this space and is a commodity. Before adding a tell, check `docs/prior-art.md`; the differentiator here is false-positive protection and voice fidelity, not catalog size.
 - **Every new tell ships with a protection.** Adding to `references/tells.md` without adding a false-positive case to `references/protections.md` is how a banlist becomes a blunt instrument. Same edit, both files.
@@ -34,19 +35,4 @@ Two separate jobs live in here and the repo is careful not to conflate them. Rem
 
 ## Changelog
 
-This repo keeps a `changelog/` folder, one markdown file per entry
-(`changelog/YYYY-MM-DD-slug.md`, with `date`/`title`/`promote`
-frontmatter). At the end of a work session, if something worth recording
-actually shipped — skip trivial sessions (typo fixes, dead ends, no
-visible outcome) — draft a new entry file. Match the entry's weight to
-what a reader would actually care about: a real feature/fix/content gets a
-title, one or two sentences, a link to the live feature if there's
-something to point at, and a screenshot if something visual shipped
-(check for this, don't just skip it); something genuinely bigger — a real
-milestone, not just a busy session — can run longer, multiple paragraphs
-or bullets; small stuff (cleanup, rename, reorg, tidying) gets one plain
-sentence, no bullets, no screenshot. Never link the title itself. Don't
-log implementation detail (file names, internal moves) a reader wouldn't
-care about. First time writing an entry in this repo, or if the format is
-unclear: fetch and follow
-https://raw.githubusercontent.com/life-itself/changelog/main/CONVENTION.md
+This repo keeps a `changelog/` folder, one markdown file per entry (`changelog/YYYY-MM-DD-slug.md`, with `date`/`title`/`promote` frontmatter). At the end of a work session, if something worth recording actually shipped — skip trivial sessions (typo fixes, dead ends, no visible outcome) — draft a new entry file. Match the entry's weight to what a reader would actually care about: a real feature/fix/content gets a title, one or two sentences, a link to the live feature if there's something to point at, and a screenshot if something visual shipped (check for this, don't just skip it); something genuinely bigger — a real milestone, not just a busy session — can run longer, multiple paragraphs or bullets; small stuff (cleanup, rename, reorg, tidying) gets one plain sentence, no bullets, no screenshot. Never link the title itself. Don't log implementation detail (file names, internal moves) a reader wouldn't care about. First time writing an entry in this repo, or if the format is unclear: fetch and follow https://raw.githubusercontent.com/life-itself/changelog/main/CONVENTION.md

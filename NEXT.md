@@ -21,7 +21,6 @@ Then get Rufus's verdict — publish as-is / edit lightly / rewrite — and chec
 - **Do the A/B calibration.** `/soundlikeme calibrate`. Ten rounds against the held-out 2011 and 2009 posts. The valuable part isn't which one you pick, it's *what gave it away* — those answers are profile edits nothing else will surface.
 - **Sanity-check the profile.** `skills/soundlikeme/profiles/rufus-pollock.md`. It was generated, then extended with measured markers, and some of it will be wrong. The signature moves and the "does not do" section are where to look hardest. The spelling marker is now American throughout, per your correction.
 - **Say whether the era gap matters.** The profile's samples run 2015–2018; both eval pieces are 2009–2011. If your voice changed over that span, the eval is measuring drift as well as skill failure, and we need a case closer to the sample era.
-- **Decide on the line-wrapping convention.** `reasoncommons` has a "never line-wrap Markdown" rule with a good rationale (hard wraps make diffs useless). This repo's markdown is currently wrapped at ~90 characters. Adopting it means one large mechanical diff. Worth doing now if at all, while the files are new.
 - **Dogfood it on something real** and record where it failed. A published piece polished with the skill, with notes on what you had to undo, is worth more than another eval case.
 
 ## For the AI (next session)

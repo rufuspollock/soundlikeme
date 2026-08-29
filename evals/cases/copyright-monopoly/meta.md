@@ -14,11 +14,7 @@
 
 ## Why this piece
 
-Close to the register the profile describes: states a position in the first paragraph, argues
-it, quotes a source at length and comments on it, uses footnotes for asides, and ends on the
-argument rather than an exhortation. Several profile signature moves are visible and testable
-— the "control of one apple vs all apples" reframing, the direct "To put it most bluntly:",
-the parenthetical doubts ("whether this actually true is unclear to me"), the Colophon.
+Close to the register the profile describes: states a position in the first paragraph, argues it, quotes a source at length and comments on it, uses footnotes for asides, and ends on the argument rather than an exhortation. Several profile signature moves are visible and testable — the "control of one apple vs all apples" reframing, the direct "To put it most bluntly:", the parenthetical doubts ("whether this actually true is unclear to me"), the Colophon.
 
 ## What the brief deliberately drops
 
@@ -34,8 +30,6 @@ These are exactly what the profile claims to capture, so they are what the eval 
 
 ## Known weaknesses
 
-- 2011, earlier than most profile samples (2015-2018). Some divergence may be era, not
-  profile failure. Worth a later case from the same period as the samples.
-- The reference contains two typos in the original ("terminlogy", "It's creation"). Reproduced
-  verbatim. A candidate will not have them; do not penalise or credit it either way.
+- 2011, earlier than most profile samples (2015-2018). Some divergence may be era, not profile failure. Worth a later case from the same period as the samples.
+- The reference contains two typos in the original ("terminlogy", "It's creation"). Reproduced verbatim. A candidate will not have them; do not penalise or credit it either way.
 - The ceiling piece is from 2009 — same era problem, but at least matched to the reference.

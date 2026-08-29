@@ -1,18 +1,14 @@
 # Self-check
 
-Run this against your own output before returning it. Answer every item pass or fail. Fix
-each failure, then re-run the items you changed.
+Run this against your own output before returning it. Answer every item pass or fail. Fix each failure, then re-run the items you changed.
 
 Once. Not in a loop — see the bounded-passes rule in SKILL.md.
 
 ## Preservation
 
-1. Are all facts, numbers, dates, names, units, quotations, and citations from the input
-   present and unchanged?
-2. Did you add no claim, statistic, example, source, anecdote, opinion, or conclusion that
-   was not in the input?
-3. Are code blocks, inline code, YAML, tables, URLs, file paths, and product names
-   byte-identical?
+1. Are all facts, numbers, dates, names, units, quotations, and citations from the input present and unchanged?
+2. Did you add no claim, statistic, example, source, anecdote, opinion, or conclusion that was not in the input?
+3. Are code blocks, inline code, YAML, tables, URLs, file paths, and product names byte-identical?
 4. Is quoted or attributed material untouched, including its slop?
 5. Are "never", "must", "all", "only" preserved exactly wherever they carry force in a rule?
 6. Are the author's hedges and attributions intact — no confidence added?
@@ -20,8 +16,7 @@ Once. Not in a loop — see the bounded-passes rule in SKILL.md.
 ## Restraint
 
 7. Did you edit only sentences with a named defect, and copy the rest byte-for-byte?
-8. For each edit, can you name the specific defect, rather than a general sense of
-   AI-ishness?
+8. For each edit, can you name the specific defect, rather than a general sense of AI-ishness?
 9. Is the amount of cutting proportional to the actual problem?
 10. Would the author still recognize the structure, including the detours?
 11. Did you leave strong human sentences alone instead of tidying them for consistency?

@@ -1,13 +1,8 @@
 # Concision
 
-Twelve rules distilled from Strunk's *Elements of Style*, with examples. This is the
-always-on layer, about 700 tokens. The full 1918 text is in
-[elements-of-style.md](elements-of-style.md) at roughly 18,000 tokens — load it only for
-`--deep`, or hand a draft to a subagent with it when context is tight.
+Twelve rules distilled from Strunk's *Elements of Style*, with examples. This is the always-on layer, about 700 tokens. The full 1918 text is in [elements-of-style.md](elements-of-style.md) at roughly 18,000 tokens — load it only for `--deep`, or hand a draft to a subagent with it when context is tight.
 
-Good writing is the floor. Voice is the layer on top. Where the two genuinely conflict,
-prefer the voice profile: a person's real habits beat a general rule, and Strunk was not
-writing about your user. But most apparent conflicts are the model excusing bloat.
+Good writing is the floor. Voice is the layer on top. Where the two genuinely conflict, prefer the voice profile: a person's real habits beat a general rule, and Strunk was not writing about your user. But most apparent conflicts are the model excusing bloat.
 
 1. **Omit needless words.** Every word earns its place.
    - "in order to" → "to" · "the question as to whether" → "whether" · "he is a man who" →
@@ -17,8 +12,7 @@ writing about your user. But most apparent conflicts are the model excusing bloa
    - Bad: "Significant revenue growth was achieved across multiple segments."
    - Good: "Revenue grew 30% in Q3, driven by enterprise sales."
 
-3. **Use the active voice.** Shorter and clearer. Passive only when the actor is genuinely
-   unknown or irrelevant — or when the genre calls for it.
+3. **Use the active voice.** Shorter and clearer. Passive only when the actor is genuinely unknown or irrelevant — or when the genre calls for it.
    - Bad: "The feature was shipped by the team after testing was completed."
    - Good: "The team shipped the feature after testing."
 
@@ -32,8 +26,7 @@ writing about your user. But most apparent conflicts are the model excusing bloa
 5. **Put statements in positive form.** Say what a thing is.
    - Bad: "He was not very often on time." Good: "He usually came late."
 
-6. **One idea per sentence.** Two ideas, two sentences. A paragraph that drifts to a second
-   topic wants a break. Do not split a long sentence that is clear.
+6. **One idea per sentence.** Two ideas, two sentences. A paragraph that drifts to a second topic wants a break. Do not split a long sentence that is clear.
 
 7. **Do not hedge unless genuinely uncertain.** Hedging weakens everything near it.
    - Bad: "This may potentially have an impact on performance."
@@ -44,8 +37,7 @@ writing about your user. But most apparent conflicts are the model excusing bloa
    - use / not utilize · help / not facilitate · method / not methodology · start / not
      commence · about / not with regard to · enough / not sufficient
 
-9. **Cut qualifiers.** "very", "really", "quite", "somewhat", "fairly" almost always weaken.
-   Remove and reread. Keep one when it carries real emphasis or the author's spoken rhythm.
+9. **Cut qualifiers.** "very", "really", "quite", "somewhat", "fairly" almost always weaken. Remove and reread. Keep one when it carries real emphasis or the author's spoken rhythm.
 
 10. **Vary sentence length.** Default short. Use a long sentence to carry a complex idea,
     then follow it with a short one. Three sentences of the same length in a row is a
@@ -61,8 +53,7 @@ writing about your user. But most apparent conflicts are the model excusing bloa
 
 ## Make verbs do the work
 
-"made a decision" → "decided" · "has the ability to" → "can" · "provides support for" →
-"supports" · "is representative of" → "represents" · "take into consideration" → "consider"
+"made a decision" → "decided" · "has the ability to" → "can" · "provides support for" → "supports" · "is representative of" → "represents" · "take into consideration" → "consider"
 
 ## Do not over-apply
 
@@ -70,8 +61,7 @@ Concision is not compression. Do not:
 
 - Strip nuance that protects accuracy
 - Drop coverage the piece needs
-- Reduce every sentence to its shortest form — that produces the staccato style described in
-  [protections.md](protections.md)
+- Reduce every sentence to its shortest form — that produces the staccato style described in [protections.md](protections.md)
 - Cut an aside, joke, or digression that carries voice
 
 The target is that every word earns its place, not that there are as few words as possible.
