@@ -4,11 +4,13 @@ I do a lot of writing with AI now. Dictating ideas, brainstorming, having it syn
 
 I want two things: writing that sounds like *me*, and writing that's actually *good*. Concise, clear, well-structured. These are related but distinct problems. You can match someone's voice perfectly and still produce bloated prose.
 
-So I've been experimenting with how to solve this. The result is [Sound Like Me](https://github.com/rufuspollock/soundlikeme) -- a small open-source project with two agent skills built to the [agentskills.io](https://agentskills.io) specification:
+So I've been experimenting with how to solve this. The result is [Sound Like Me](https://github.com/rufuspollock/soundlikeme) -- a small open-source project: one agent skill built to the [agentskills.io](https://agentskills.io) specification, with a few separate jobs behind it.
 
-1. **voice-extractor** -- you point it at a few samples of your writing and it generates a compact voice profile: your tone, sentence structure, vocabulary, signature moves, what you *don't* do. Under 500 words, so it's cheap on tokens.
+1. **`extract`** -- you point it at a few samples of your writing and it generates a compact voice profile: your tone, sentence structure, vocabulary, signature moves, what you *don't* do. Plus measurable markers -- sentence length variance, contraction rate, how often you reach for a footnote -- so the profile is something you can actually check output against.
 
-2. **write-like-me** -- you load this on demand when you want polished output. It applies your voice profile, a set of distilled conciseness rules (think Strunk & White compressed to 12 rules with examples), and an explicit banlist of AI anti-patterns ("delve", "landscape", the dreaded snappy triad). The idea is you draft freely, then invoke this at the polish step.
+2. **`polish`** -- you load this on demand when you want polished output. It applies your voice profile, a set of distilled conciseness rules (think Strunk & White compressed to 12 rules with examples), and an explicit banlist of AI anti-patterns ("delve", "landscape", the dreaded snappy triad). The idea is you draft freely, then invoke this at the polish step.
+
+3. **`eval`** -- the part I care most about, and the part nobody else seems to do. How do you know any of this is working? Take a piece you published that the profile wasn't built from, strip it to a bulleted brief, have the skill draft from that brief, and compare the draft to what you actually wrote. Then bracket the score: a ceiling (another real piece of yours) and a floor (the same brief with no profile). If the profile doesn't beat the floor, it's decoration.
 
 The approach came out of a research survey I did on what actually works. The short answer: extracted voice profiles (compact descriptions generated from your writing samples) combined with conciseness rules and anti-pattern bans. Raw writing samples are more effective but burn too many tokens for practical use. A hybrid -- compact profile plus one short sample as an anchor -- is the sweet spot.
 
@@ -19,8 +21,7 @@ It's early and experimental. The skills work but they need more testing across d
 To install the skills:
 
 ```bash
-npx skills add rufuspollock/soundlikeme/skills/voice-extractor
-npx skills add rufuspollock/soundlikeme/skills/write-like-me
+npx skills add rufuspollock/soundlikeme/skills/soundlikeme
 ```
 
 This works with Claude Code, Cursor, GitHub Copilot, and [other agents that support the agentskills.io spec](https://skills.sh/).
