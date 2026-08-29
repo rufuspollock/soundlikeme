@@ -57,6 +57,19 @@ Protect a match when it is:
 
 A noun referent is not enough on its own. "A game-changer for the product" is still vague unless the text says what changes.
 
+## Micro-conventions are voice
+
+The smallest, most mechanical habits carry more identity than the big rhetorical moves, and they are exactly what a cleanup pass normalizes without noticing. Read them off the profile and preserve them exactly:
+
+- **Dash convention.** Spaced en dash, unspaced em dash, or neither. Converting one to the other changes the typographic personality of every paragraph. In testing, judges named this as the clearest single signal separating two otherwise similar drafts.
+- **Connectives.** "Furthermore", "Nevertheless", "Moreover", "i.e.", "etc". The concision rules call these filler. For a writer who uses them as structural joints they are load-bearing, and the profile wins. Never strip a connective the profile names.
+- **Quote marks on contested terms.** Single versus double for scare quotes.
+- **Numerals versus words** for small numbers. "over 3 years ago" is not the same voice as "over three years ago".
+- **The occasional exclamation mark or unguarded flourish.** The one burst of enthusiasm in a piece is often the most personal thing in it, and it is the first casualty of polishing. In testing, a draft that kept the author's exclamation mark beat one that flattened it to a period — both orders, high confidence.
+- **Self-referential parentheticals.** "(see next sentence)", "(at least in our simple case)". They read as untidy because they are habit.
+
+None of these survive a pass aimed at making prose cleaner. That is the point. The author was not aiming for clean.
+
 ## The portability test
 
 If a sentence could move unchanged into a piece about a different person, company, country, or product, it is probably filler. Cut it, or replace it with a fact, mechanism, consequence, or judgment specific to this subject.

@@ -23,6 +23,21 @@ evals/
     YYYY-MM-DD-<label>/          the three scored texts, kept so a score can be checked
 ```
 
+## Pairwise is the primary method
+
+Absolute 1-5 scoring proved too noisy to use. In run 2 an identical floor text scored 24 and then 31 on two runs against the same reference — a seven-point swing on byte-identical input, wider than any effect we are trying to measure. Use it for diagnosis, never for a verdict.
+
+Forced-choice comparison is robust to that noise and produced clean, order-invariant results on the same texts:
+
+1. Take two candidates written from the same brief.
+2. Give a fresh judge the reference, **the brief**, and both candidates as `text-1` and `text-2`.
+3. Ask one question: which reads more like the same person who wrote the reference? Forced choice, no ties, plus confidence and quoted evidence.
+4. Run it twice with the order swapped, using a different judge each time. A result that flips with order is not a result.
+
+The judge must be told to judge voice, not quality — "the more polished piece is often the less faithful one" — or it will reward good writing. It must also get the brief: without it the fabrication check cannot work, because the judge cannot tell an invented specific from one that was supplied.
+
+Run pairwise for verdicts. Run the rubric below when you want to know *which dimension* is off, and treat the numbers as indicative.
+
 ## Running a case
 
 1. **Candidate.** `draft` from `brief.md` with the author's profile loaded.
@@ -30,6 +45,7 @@ evals/
 3. **Ceiling.** The piece named as `ceiling` in `meta.md`, unmodified.
 4. **Judge.** For each of the three, dispatch a fresh subagent with:
    - `reference.md`
+   - `brief.md` — required; the fabrication gate is decorative without it
    - one candidate
    - `rubric.md`
 
@@ -51,6 +67,8 @@ The control group, and the most important test here.
 Same brief, two drafts — profile on, profile off. A blind judge picks which is closer to the reference. Run it whenever the profile format or the `draft` command changes.
 
 If profile-on does not win reliably, the profile is doing nothing. That is a real finding. Report it plainly rather than explaining it away.
+
+Run this pairwise, not by comparing absolute scores. As of 2026-08-29 it stands at 4-0 to profile-on, both orders, all judges high confidence.
 
 ## Protection and detection fixtures
 

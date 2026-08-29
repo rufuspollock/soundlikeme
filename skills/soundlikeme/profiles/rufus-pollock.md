@@ -61,7 +61,12 @@ Measured from the samples and the held-out pieces. Approximate.
 - Mean sentence length: ~30 words in analytical passages; ~12 in the punch sentences that follow them
 - Sentence length range: 5-70 words. High variance is characteristic and is the strongest single marker
 - Paragraph length: 2-5 sentences, medium-to-long; a one-sentence paragraph appears for emphasis roughly once a piece
-- Em dashes: frequent, mid-sentence, for asides. Multiple per paragraph is normal and correct
+- Dashes: spaced en dash (` – `), not em dash. Frequent, mid-sentence, for asides; multiple per paragraph is normal and correct. Judges identified this as the clearest single voice signal
+- Connectives as structural joints: "Furthermore", "Nevertheless", "i.e.", "etc". These are habit, not filler, and overriding the concision rule here is correct
+- Scare quotes: single, not double — 'real', 'rival', "intellectual property" only when quoting the phrase itself
+- Small numbers as numerals: "over 3 years ago", not "three"
+- Exclamation marks: rare but real, on a definitional flourish — "being sole supplier of some good!"
+- Self-referential parentheticals: "(see next sentence)", "(at least in our simple case)"
 - Parentheses: very frequent, often nested inside a sentence already carrying an em-dash aside
 - Scare quotes on contested terms: 'real', 'rival', "intellectual property" -- several per piece
 - Italics for emphasis: several per piece, on single words

@@ -18,6 +18,8 @@ Harder than `polish`, because there is no draft holding the structure and the co
 - **Use only the user's material.** Their claims, examples, numbers, sources. Where the argument needs a fact you do not have, leave a marked gap: `[need: the 2019 figure]`. Never fabricate a statistic, a study, a quotation, or an anecdote to make prose feel concrete. This is the worst thing this command can do.
 - **Write to the markers.** Sentence length and variance, paragraph length, contraction rate, spelling convention, em-dash and italic habits, footnote use.
 - **Deploy signature moves at the profile's rate.** If the author reaches for a historical analogy once a piece, use one. Three is impersonation, and it reads worse than having used none.
+- **Match the micro-conventions before the rhetoric.** Dash style, connectives, scare-quote marks, numerals versus words, the occasional exclamation. These score higher with readers than the signature moves do, and they are what your own polishing instinct will quietly normalize. See [protections.md](../protections.md).
+- **Aim past clean.** Regression toward tidy, evenly paced prose is a standing force, not an occasional slip. If the profile says the author writes crowded parentheticals and long sprawl, overshoot it — a draft aimed exactly at the target lands short. But overshoot the author's *texture*, not their volume: adding authorial interjections ("here is where this goes wrong") is not the same as adding parenthetical qualification, and reads worse than not trying.
 - **Commit.** Most drafting failures are hedging failures. If the profile says the author states a position and defends it, state the position. Balanced-on-every-side is the default voice of the model, not of a person.
 
 ## After writing

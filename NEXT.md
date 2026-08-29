@@ -4,13 +4,17 @@ What to do next in this repo, written so a fresh session (human or AI) can pick 
 
 ## Where the eval stands
 
-It has run once — see [`evals/results/2026-08-29-first-run.md`](evals/results/2026-08-29-first-run.md). Ceiling 34/35, candidate 31, floor 24. The ablation came out positive: drafting with the profile beat drafting without it on all seven dimensions, so the profile is not decoration.
+Three runs on 2026-08-29. Read them in order; each one corrects the last.
 
-But only three of the seven dimensions had a ceiling-floor gap wider than a single point, and on those three the candidate closed half the gap. The four dimensions reporting "1.00 headroom closed" have a one-point range and are noise. The measurement works; it does not yet resolve much.
+- [Run 1](evals/results/2026-08-29-first-run.md) — absolute rubric scoring. Reported profile-on beating the no-profile floor 31 to 24. **Retracted.**
+- [Run 2](evals/results/2026-08-29-second-run.md) — better-matched ceiling, same texts. The identical floor text scored 31 instead of 24: a seven-point swing on byte-identical input, wider than the effect being measured. Absolute single-judge scoring cannot resolve anything at this scale.
+- [Run 3](evals/results/2026-08-29-third-run-pairwise.md) — forced-choice pairwise, every comparison in both orders with a different judge. Clean and order-invariant. **Profile-on beats no-profile 4-0, all high confidence.** The ablation holds after all.
 
-Three harness bugs were found and two are fixed (the rubric now gates on invented specifics, and tells judges to determine spelling convention from evidence in the reference rather than by impression — one judge credited the no-profile floor for using "defence" when the reference is American). The third is unfixed: the ceiling piece is 501 words against the reference's 969 and is a reading-note rather than a sustained argument, which probably caps the Rhythm dimension artificially. **Pick a better-matched ceiling piece and re-run** — that is the cheapest next improvement to the measurement.
+Pairwise is now the primary method; the rubric is for diagnosis only. Judges must be given the brief, or the fabrication gate cannot work — once they had it, all four flagged the floor's invented specifics ("Mark Helprin", "seventy years after death") unprompted, and both profile-on drafts came back clean.
 
-The substantive finding: the candidate lost points on Rhythm and Signature moves for being *more polished and more evenly paced than Rufus actually is*. The profile names his parenthetical pile-ups and high sentence-length variance as markers, `protections.md` already says "flat is a tell too", both were loaded, and the draft still came out tidier than the man. Regression toward clean prose looks like a constant force rather than a missing rule. Worth trying: instruct `draft` to overshoot the profile's roughness deliberately, and measure whether that moves Rhythm.
+**The run that paid for the whole harness:** judges picked winners on micro-conventions, not rhetoric — dash style, connectives, numerals, scare quotes, and one exclamation mark. And `concision.md` rule 12 was banning "Furthermore" and "Moreover" as filler while the reference author uses them as structural joints. The skill's concision layer was deleting a voice signal, in a repo built on the premise that voice survives the cleanup. Fixed, with a new "Micro-conventions are voice" section in `protections.md`.
+
+Also confirmed: instructing `draft` to overshoot the profile's texture beat the draft written without that instruction, 2-0 in both orders. Now committed to `draft.md`.
 
 ## Needs you — tracked as issues
 
@@ -33,8 +37,8 @@ Read `AGENTS.md` first, then `docs/prior-art.md` before touching the banlist.
 
 Roughly in order:
 
-1. **Re-run with a better ceiling piece** and see whether the gaps widen (above). Then run a second case, because one case cannot tell us whether three usable dimensions is a rubric problem or a sample-size problem.
-2. **Add a second author.** Paul Graham is the obvious choice — enormous, distinctive, freely on the web. Build a profile from a handful of essays, hold two out, seed a case. A technique that only works on one person is not a technique, and right now that is exactly what we have.
+1. **Add a second author** — everything found so far could be a fact about one pair of essays. Paul Graham: enormous, distinctive, freely on the web. Build a profile, hold two pieces out, seed a case, re-run the pairwise ablation. This is now the highest-value work.
+2. **Control for judge bias.** Run 3's judges were told "the more polished piece is often the less faithful one" — true, and possibly enough on its own to bias toward whichever draft looks rougher. Re-run one comparison with that sentence removed and see whether the verdict holds.
 3. **Build `polish` fixtures.** The eval currently measures `draft` only. `polish` takes the user's own rough text, which reconstruction cannot simulate. The shape: take a real piece, degrade it into AI-ish prose (a separate pass, saved as the fixture input), then measure how much of the original the skill restores. Degrade-and-restore, with the original as the target.
 4. **Build protection and detection fixtures.** Protection: already-human prose, scientific text where passive voice is correct, quoted material, code, precise legal wording — any edit to a protected span is a failure. Detection: genuinely slopped text where failure to fix is a miss. These measure the false-positive and false-negative rates that `protections.md` exists to control, and neither is measured today.
 5. **Re-run the ablation after any profile-format change.** Profile on versus profile off, blind judge. It is the cheapest test here and the one most likely to produce an uncomfortable answer.

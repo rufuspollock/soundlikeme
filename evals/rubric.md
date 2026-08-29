@@ -8,7 +8,7 @@ Every score needs an evidence quote from the candidate. A score with no quote is
 
 Do not try to work out which text is machine-generated. That is not the question, and guessing at it will distort every score below.
 
-**Gate: invented specifics.** Before scoring anything, check the candidate for names, numbers, dates, titles, or quotations that are not in the reference and could not have come from the shared source material. Any of these makes Concreteness a 1, however well the piece reads and however plausible the invention. Quote the invented span. A fabricated specific is a worse failure than a missing one — do not score around it because the rest is good.
+**Gate: invented specifics.** You must be given the brief — the bulleted source material the candidate was written from — as well as the reference. Without it you cannot run this gate; say so rather than guessing. Before scoring anything, check the candidate for names, numbers, dates, titles, or quotations that are not in the brief. Any of these makes Concreteness a 1, however well the piece reads and however plausible the invention. Quote the invented span. A fabricated specific is a worse failure than a missing one — do not score around it because the rest is good.
 
 ---
 
