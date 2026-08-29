@@ -81,4 +81,6 @@ See [`AGENTS.md`](AGENTS.md) for how agents should work in here, [`NEXT.md`](NEX
 
 ## Status
 
-Early. The eval has run once: ceiling 34/35, profile-on candidate 31, no-profile floor 24, with the profile beating the floor on every dimension. Four of the seven dimensions had a one-point range and did not resolve. See [the run](evals/results/2026-08-29-first-run.md) and [`NEXT.md`](NEXT.md).
+Early, and now measured. The eval has run three times ([1](evals/results/2026-08-29-first-run.md), [2](evals/results/2026-08-29-second-run.md), [3](evals/results/2026-08-29-third-run-pairwise.md)). Absolute scoring turned out too noisy to use; forced-choice pairwise works. Profile-on beats no-profile 4-0, both orders, all judges high confidence.
+
+The eval has already caught a real bug in the skill: the concision rules were banning "Furthermore" and "Moreover" as filler while the author being imitated uses them as structural joints. See [`NEXT.md`](NEXT.md) and the [open issues](https://github.com/rufuspollock/soundlikeme/issues).
