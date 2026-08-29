@@ -26,7 +26,7 @@ smallest repair that fixes it. Copy every other sentence byte-for-byte, in its o
 order and paragraph. With no findings, return the input exactly. A rough draft with a real
 voice must still sound like the same person afterwards.
 
-**2. A match is not a licence.** Finding a banned word does not authorise an edit. Check
+**2. A match is not a license.** Finding a banned word does not authorize an edit. Check
 `references/protections.md` first. Prefer a no-op to an uncertain edit. Over-editing
 produces clipped, opinion-flattened anti-slop prose, which is its own detectable style and
 a worse failure than the slop.

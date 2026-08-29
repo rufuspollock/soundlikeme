@@ -8,7 +8,7 @@ Status: accepted, being implemented
 We can tell when AI writing is bad. We cannot tell when it is *ours*. Everything in
 `docs/prior-art.md` measures the first thing and asserts the second. stop-slop scores
 "Authenticity" 1-10 with no reference text. unslop computes a stylometric silhouette but
-never validates that the number tracks an author's own judgement.
+never validates that the number tracks an author's own judgment.
 
 Without a measure, every change to these skills is a guess. The banlist grows, the prose
 gets flatter, and nobody can say whether it got better.

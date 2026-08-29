@@ -47,5 +47,5 @@ tell-removal will fix it.
 ## Output
 
 The draft, then a short note listing any `[need: ...]` gaps and any place where you followed
-the profile against your own judgement — the second one is where the user's correction is
+the profile against your own judgment — the second one is where the user's correction is
 most valuable.

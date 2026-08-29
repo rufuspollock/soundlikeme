@@ -31,7 +31,7 @@ unpack this", "Let's break this down", "At the end of the day", "When it comes t
 
 "Certainly!", "Of course!", "I hope this helps", "Let me know if", "Here is the", "As an
 AI", knowledge-cutoff disclaimers, "I've drafted", section labels the user did not ask for.
-These are pasted artefacts, not style. Always cut.
+These are pasted artifacts, not style. Always cut.
 
 ## Hard: structures
 
@@ -118,7 +118,7 @@ balanced.
 Ordinary words. Only worth acting on when the piece is thick with them, and never when the
 word is doing real work.
 
-**Corporate verbs:** leverage, utilise, facilitate, foster, empower, streamline, robust,
+**Corporate verbs:** leverage, utilize, facilitate, foster, empower, streamline, robust,
 elevate, unlock, drive, deliver, spearhead, curate, craft (as a verb for non-crafts)
 
 **Inflation adjectives:** cutting-edge, innovative, seamless, comprehensive, holistic,

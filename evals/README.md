@@ -76,7 +76,7 @@ change. A tell without a protection is how a banlist becomes a blunt instrument.
 
 ## Writing a brief
 
-The delicate step. A brief that leaks the author's phrasing rigs the eval in our favour,
+The delicate step. A brief that leaks the author's phrasing rigs the eval in our favor,
 which is worse than having no eval at all.
 
 Rules:

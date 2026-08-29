@@ -1,6 +1,6 @@
 # Research: Making AI Write in Your Voice
 
-A survey of techniques, tools, and findings for directing AI to produce writing that matches a specific person's (or organisation's) voice while maintaining quality.
+A survey of techniques, tools, and findings for directing AI to produce writing that matches a specific person's (or organization's) voice while maintaining quality.
 
 ## 1. The Core Problem
 
@@ -60,7 +60,7 @@ Describe the desired voice using specific adjectives and style attributes rather
 - **Anti-patterns:** explicitly list what to avoid (see Section 4)
 - **Tone registers:** Word.Studio catalogues 29 distinct registers (playful, minimalist, academic, edgy, etc.) with descriptions
 
-**When to use:** When you don't have writing samples, or for an organisation defining a new voice. Less effective than samples for matching a *specific* person, but useful for setting a general direction.
+**When to use:** When you don't have writing samples, or for an organization defining a new voice. Less effective than samples for matching a *specific* person, but useful for setting a general direction.
 
 **Token cost:** Very low. 50-200 words.
 
@@ -86,7 +86,7 @@ Regardless of voice, AI output benefits from explicit conciseness constraints. T
 4. **Lead with the point.** State the conclusion, then support it. Don't build up to it.
 5. **One idea per sentence.** If a sentence has two ideas, split it.
 6. **Avoid hedging.** Say "X causes Y" not "X may potentially have an impact on Y." If uncertain, say so directly: "I'm not sure whether X causes Y."
-7. **Use plain words.** "Use" not "utilise." "Help" not "facilitate." "Method" not "methodology."
+7. **Use plain words.** "Use" not "utilize." "Help" not "facilitate." "Method" not "methodology."
 8. **Cut qualifiers.** "Very", "really", "quite", "somewhat" almost always weaken a sentence.
 9. **Vary sentence length for rhythm** but default to short.
 10. **Limit section headers to six words.**
@@ -98,7 +98,7 @@ Regardless of voice, AI output benefits from explicit conciseness constraints. T
 AI has characteristic tics. Explicitly banning them is surprisingly effective.
 
 ### Words and phrases to ban:
-- "Delve", "realm", "tapestry", "landscape", "leverage", "utilise", "facilitate", "endeavour"
+- "Delve", "realm", "tapestry", "landscape", "leverage", "utilize", "facilitate", "endeavour"
 - "In today's [adjective] world/landscape/environment"
 - "It's important to note that..."
 - "Let's dive in", "Let's unpack this"
@@ -149,7 +149,7 @@ Based on the research, the most effective and practical approach combines severa
 2. Optionally include 1 short sample as a concrete anchor
 3. Write/dictate freely, then invoke the style guide for the synthesis/polish step
 
-### For organisations:
+### For organizations:
 1. Same process but with multiple authors' samples to find the *shared* patterns
 2. The style guide becomes a living document that evolves with editorial feedback
 3. Anti-patterns can be customised per-org (e.g. "never say 'stakeholders'")
@@ -164,7 +164,7 @@ Based on the research, the most effective and practical approach combines severa
 
 - **How much does model matter?** Do these techniques transfer equally well across Claude, GPT-4, Gemini, etc.?
 - **Decay over long outputs:** Style adherence may drift in longer pieces. Does periodic re-grounding help?
-- **Evaluation:** How do you objectively measure "sounds like me"? Embedding distance (as Taylor used) is one approach, but subjective judgement may matter more.
+- **Evaluation:** How do you objectively measure "sounds like me"? Embedding distance (as Taylor used) is one approach, but subjective judgment may matter more.
 - **Diminishing returns on samples:** At what point do more samples stop improving fidelity?
 - **Interaction with other instructions:** Does a style guide conflict with other system prompt instructions?
 

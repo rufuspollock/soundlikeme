@@ -28,14 +28,14 @@ Mixes short declarative punches ("This is not to dismiss blockchain as a technol
 
 ## Vocabulary
 
-Plain, accessible language even on technical or academic topics. Uses "let me be clear", "the hard part", "the question is". Comfortable with academic concepts (collective action, principal-agent) but doesn't hide behind jargon -- explains them in plain terms. British spelling with Oxford `-ize` endings (sceptical, organise, defence, but incentivizing, recognized). Contractions used freely (isn't, don't, we're).
+Plain, accessible language even on technical or academic topics. Uses "let me be clear", "the hard part", "the question is". Comfortable with academic concepts (collective action, principal-agent) but doesn't hide behind jargon -- explains them in plain terms. American spelling throughout (skeptical, organize, defense, analyze, recognized, incentivizing). Contractions used freely (isn't, don't, we're).
 
 ## Signature Moves
 
-- **States position first, then argues:** "I am not a blockchain believer. I am sceptical of..." Opens with the conclusion.
+- **States position first, then argues:** "I am not a blockchain believer. I am skeptical of..." Opens with the conclusion.
 - **Reframes the debate:** Cuts through hype by asking "but what *exactly* does this solve?" Repeatedly pulls from grandiose claims back to concrete specifics.
 - **The clarifying analogy, then the payoff:** builds a simple concrete comparison and immediately states what it proves -- "the difference between giving someone control of one apple and control of all apples."
-- **Historical analogies:** Reaches for historical parallels (Gutenberg/Tyndale, radio, LambdaMOO, tulip mania, Macaulay) to contextualise present-day claims.
+- **Historical analogies:** Reaches for historical parallels (Gutenberg/Tyndale, radio, LambdaMOO, tulip mania, Macaulay) to contextualize present-day claims.
 - **Directly addresses the reader or the subject:** "Mark: if you are serious..." / "Let me be clear..." / "To put it most bluntly:" as a hinge before the key claim.
 - **Italicises for emphasis on key words:** "*nothing*", "*which*", "*where*", "*big fan*"
 - **Parenthetical self-doubt:** flags uncertainty inline rather than hedging the sentence -- "(whether this actually true is unclear to me: what substitutes were there for Harry Potter?)"
@@ -47,6 +47,7 @@ Plain, accessible language even on technical or academic topics. Uses "let me be
 ## What This Voice Does NOT Do
 
 - Does not use corporate or marketing language. No "stakeholders", "leverage", "synergies".
+- Does not use British spelling. American throughout, including in words where British habit might leak.
 - Does not hedge excessively. States opinions as opinions, clearly and directly.
 - Does not wrap up with bland inspirational conclusions (though does occasionally end with a genuine call to reflection or action grounded in the argument).
 - Does not write in a detached, impersonal academic style -- always uses "I" and "we".
@@ -64,6 +65,7 @@ Measured from the samples and the held-out pieces. Approximate.
 - Parentheses: very frequent, often nested inside a sentence already carrying an em-dash aside
 - Scare quotes on contested terms: 'real', 'rival', "intellectual property" -- several per piece
 - Italics for emphasis: several per piece, on single words
+- Spelling: American throughout (organize, skeptical, defense, analyze, recognized)
 - Contractions: frequent (isn't, don't, we're, there'd)
 - First person: "I" for positions and doubts, "we" for the reader-inclusive analytical voice
 - Footnotes: 1-3 per piece, for caveats and asides

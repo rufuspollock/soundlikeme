@@ -56,10 +56,10 @@ per dimension.
 - **Ceiling below floor on any dimension** means the judge is broken, not that generic
   writing beat the author. Investigate the judge before believing anything else in the run.
 - **Rubric up, verdict flat** means the rubric is wrong. Change the rubric. It serves the
-  author's judgement, never the reverse.
+  author's judgment, never the reverse.
 
 ## Adding a case
 
 See `evals/README.md`. Briefs are the delicate part: bullets and fragments only, no sentence
 lifted from the original except material the author was always going to quote. A brief that
-leaks phrasing rigs the eval in our favour, which is worse than having no eval.
+leaks phrasing rigs the eval in our favor, which is worse than having no eval.

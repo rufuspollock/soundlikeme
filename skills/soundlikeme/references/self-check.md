@@ -23,7 +23,7 @@ Once. Not in a loop — see the bounded-passes rule in SKILL.md.
 8. For each edit, can you name the specific defect, rather than a general sense of
    AI-ishness?
 9. Is the amount of cutting proportional to the actual problem?
-10. Would the author still recognise the structure, including the detours?
+10. Would the author still recognize the structure, including the detours?
 11. Did you leave strong human sentences alone instead of tidying them for consistency?
 
 ## Tells
@@ -46,7 +46,7 @@ Once. Not in a loop — see the bounded-passes rule in SKILL.md.
 20. Do the vocabulary, spelling convention, and contraction rate match the profile?
 21. Does sentence-length variance match the profile, rather than defaulting to uniformly
     short?
-22. Would the author read this and recognise it as theirs?
+22. Would the author read this and recognize it as theirs?
 
 ## Flatness
 

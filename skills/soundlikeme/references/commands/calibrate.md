@@ -5,7 +5,7 @@ review a description of themselves.
 
 Load: the profile, [profile-spec.md](../profile-spec.md).
 
-People are bad at describing their own writing and excellent at recognising it. `extract`
+People are bad at describing their own writing and excellent at recognizing it. `extract`
 asks them to do the first thing. This command asks them to do the second.
 
 ## The A/B quiz
@@ -42,7 +42,7 @@ Update the profile with what you learned. Be specific — the value is in the de
 - Add signature moves they named, with the example from the round that surfaced it
 - Correct markers the rounds contradicted
 - Add to "does not do" every time they said "I'd never write that"
-- Delete any pattern they did not recognise as theirs
+- Delete any pattern they did not recognize as theirs
 
 Show the diff, not the whole rewritten profile. Say which round produced each change.
 

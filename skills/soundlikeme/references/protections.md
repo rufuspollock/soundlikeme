@@ -4,7 +4,7 @@ The hard part of this skill is not finding tells. It is not firing on the ones t
 fine.
 
 A naive banlist produces prose that is clipped, evenly short, stripped of opinion and
-digression, and instantly recognisable as machine-edited. That is a worse outcome than the
+digression, and instantly recognizable as machine-edited. That is a worse outcome than the
 slop it replaced, because the slop at least left the author's structure intact.
 
 ## The decision rule
@@ -12,8 +12,8 @@ slop it replaced, because the slop at least left the author's structure intact.
 > Return a finding only when the contextual defect is clearer than the value of leaving it
 > alone.
 
-A scanner match alone never authorises an edit. Neither does a rhythm score, a cadence
-judgement, or a general sense that a passage is "AI-ish". Name the defect or leave it.
+A scanner match alone never authorizes an edit. Neither does a rhythm score, a cadence
+judgment, or a general sense that a passage is "AI-ish". Name the defect or leave it.
 
 ## Never touch
 
@@ -87,7 +87,7 @@ unless the text says what changes.
 
 If a sentence could move unchanged into a piece about a different person, company, country,
 or product, it is probably filler. Cut it, or replace it with a fact, mechanism,
-consequence, or judgement specific to this subject.
+consequence, or judgment specific to this subject.
 
 Use this instead of adjective-counting. It catches real emptiness and leaves strong writing
 alone.
@@ -106,7 +106,7 @@ humour, self-interruption, mixed feelings, and honest admissions. These are the 
 
 ## Preserve structure
 
-Keep the author's progression, including detours. Reorganise only when the current order
+Keep the author's progression, including detours. Reorganize only when the current order
 genuinely obscures the argument — and when you do, say why in the change note.
 
 Do not force every section into the same point-then-support shape. Do not make every

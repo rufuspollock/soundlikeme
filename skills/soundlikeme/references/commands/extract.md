@@ -56,7 +56,7 @@ Then offer `calibrate` to sharpen it against real examples.
 Write to `profiles/<name>.md` — kebab-case, e.g. `rufus-pollock.md`. Tell the user where it
 went and how to point commands at it.
 
-## Organisations
+## Organizations
 
 Same process with samples from several authors. Extract only the patterns present across all
 of them. Expect a thinner profile, and expect the "does not do" section to do most of the

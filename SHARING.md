@@ -14,7 +14,7 @@ So I've been experimenting with how to solve this. The result is [Sound Like Me]
 
 The approach came out of a research survey I did on what actually works. The short answer: extracted voice profiles (compact descriptions generated from your writing samples) combined with conciseness rules and anti-pattern bans. Raw writing samples are more effective but burn too many tokens for practical use. A hybrid -- compact profile plus one short sample as an anchor -- is the sweet spot.
 
-This isn't just for me. An organisation could use the same approach to maintain consistent tone across AI-assisted content. And the cooler version -- which is where I'd like to take this -- is pointing the voice extractor at a corpus of someone's writing and having it auto-generate a voice guide. Turn 50 blog posts into a 500-word profile that any AI can follow.
+This isn't just for me. An organization could use the same approach to maintain consistent tone across AI-assisted content. And the cooler version -- which is where I'd like to take this -- is pointing the voice extractor at a corpus of someone's writing and having it auto-generate a voice guide. Turn 50 blog posts into a 500-word profile that any AI can follow.
 
 It's early and experimental. The skills work but they need more testing across different types of writing. The repo is at [github.com/rufuspollock/soundlikeme](https://github.com/rufuspollock/soundlikeme) if you want to try it or contribute.
 

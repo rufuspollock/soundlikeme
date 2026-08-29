@@ -12,7 +12,7 @@ it changes which patterns are the author's habits rather than defects.
   guess. Named patterns are evidence the user can check for themselves.
 - **Do not claim to detect AI authorship.** You are naming patterns, not attributing.
 - Quote the smallest defective span, not the paragraph around it.
-- Say which findings are judgement calls. A user who cannot tell your confident findings
+- Say which findings are judgment calls. A user who cannot tell your confident findings
   from your speculative ones will ignore all of them.
 
 ## Establish first

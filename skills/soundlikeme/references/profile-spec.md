@@ -10,7 +10,7 @@ Target 400-600 words total. A profile that grows past a page stops being loaded 
 
 ```yaml
 ---
-name: <person or organisation>
+name: <person or organization>
 generated: <date>
 samples: <count>
 registers: <which kinds of writing the samples cover>
@@ -62,7 +62,7 @@ an output can be compared against it.
 - Paragraph length: 3-6 sentences, medium-to-long
 - Contractions: frequent (isn't, don't, we're)
 - First person: "I" throughout, "we" for collective claims
-- Spelling: British (sceptical, organise, defence)
+- Spelling: American (skeptical, organize, defense, analyze)
 - Em dashes: frequent, mid-sentence, for asides
 - Italics for emphasis: several per piece, on single words
 - Footnotes: 1-3 per piece
@@ -89,7 +89,7 @@ markers?
 6. **Hand it back for editing.** The author will spot a wrong pattern instantly, and the
    model will always assert one or two. This step is not optional.
 
-## Organisational profiles
+## Organizational profiles
 
 Same shape, built from multiple authors. Extract only the patterns that appear across all of
 them — the shared floor, not any one person's habits. Expect a thinner profile, and expect

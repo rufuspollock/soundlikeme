@@ -57,7 +57,7 @@ petergyang's `eval.md` is the single cheapest high-value idea in the field. ~30 
 
 stop-slop and deslop do the lighter version: score 1–10 on Directness / Rhythm / Trust / Authenticity / Density; below 35/50, revise.
 
-### 3.4 Deterministic scanners do detection; the LLM does judgement
+### 3.4 Deterministic scanners do detection; the LLM does judgment
 
 unslop ships `banned_phrase_scan.py`, `structure_scan.py`, `silhouette_scan.py`, `readability_metrics.py`, `voice_score.py`, `validate_preservation.py`, `diff_check.py`. avoid-ai-writing ships the same in JS plus an MCP server exposing `score_text` / `audit_text`.
 
@@ -121,7 +121,7 @@ Slop removal is solved to the point of commodity. Voice is not.
 
 - Of the eight, only unslop and the Rossmann repo do serious voice work, and only unslop is generic.
 - Nobody combines: corpus-derived voice profile + interactive calibration + quantitative voice scoring + tiered levels + a concision floor.
-- Nobody handles the **organisational** case well (shared voice across multiple authors), which the README already claims as a use case.
+- Nobody handles the **organizational** case well (shared voice across multiple authors), which the README already claims as a use case.
 
 So: don't try to out-banlist `avoid-ai-writing`. Compete on voice fidelity, on honest levels (cheap pass vs. full pass), and on the extraction/calibration loop.
 

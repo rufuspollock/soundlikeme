@@ -1,6 +1,6 @@
 # Sound Like Me
 
-Make AI-generated writing sound like *you* -- or your team, or your organisation.
+Make AI-generated writing sound like *you* -- or your team, or your organization.
 
 ## The Problem
 
@@ -35,7 +35,7 @@ The skill is a thin router. Each command loads exactly one reference file, so a 
 Two rules do most of the work:
 
 - **Minimum effective edit.** Change only spans with a named defect. Copy everything else byte-for-byte. No findings, no changes.
-- **A match is not a licence.** Finding a banned word doesn't authorise an edit. Check the protections first, and prefer a no-op to an uncertain edit.
+- **A match is not a license.** Finding a banned word doesn't authorize an edit. Check the protections first, and prefer a no-op to an uncertain edit.
 
 ### `evals/`
 
@@ -66,7 +66,7 @@ Works with Claude Code, Cursor, GitHub Copilot, and [other agents that support t
 ## Usage
 
 1. **Build a profile:** `/soundlikeme extract` with 3-5 samples of your writing, varied by register. Hold at least one piece back -- it becomes an eval case.
-2. **Sharpen it:** `/soundlikeme calibrate`. You're bad at describing your own writing and excellent at recognising it, so the A/B quiz gets further than a review.
+2. **Sharpen it:** `/soundlikeme calibrate`. You're bad at describing your own writing and excellent at recognizing it, so the A/B quiz gets further than a review.
 3. **Write or dictate freely.**
 4. **Polish:** `/soundlikeme polish`. Or `audit` first if you just want to see what's there.
 
@@ -75,6 +75,10 @@ Works with Claude Code, Cursor, GitHub Copilot, and [other agents that support t
 - *The Elements of Style* (1918) is public domain. Packaging it as an agent reference is [obra's idea](https://github.com/obra/the-elements-of-style), and the vendored text is his.
 - The tell catalogue draws on [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) and the projects surveyed in [`docs/prior-art.md`](docs/prior-art.md) -- particularly [no-ai-slop](https://github.com/petergyang/no-ai-slop) for the self-check idea, [unslop](https://github.com/theclaymethod/unslop) for the minimum-effective-edit contract, and [better-writing](https://github.com/forjd/better-writing) for genre exemptions.
 
+## Repo conventions
+
+See [`AGENTS.md`](AGENTS.md) for how agents should work in here, [`NEXT.md`](NEXT.md) for what's next, and [`changelog/`](changelog/) for what's already shipped.
+
 ## Status
 
-Early. The skills work; the eval harness has one seeded case and has not been run yet. Next up: run it, add practice authors so the technique isn't overfitted to one voice, and build fixtures for `polish` (the eval currently only measures `draft`).
+Early. The skill works; the eval harness has one seeded case and has not been run yet. See [`NEXT.md`](NEXT.md).

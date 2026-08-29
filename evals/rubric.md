@@ -20,7 +20,7 @@ Does the candidate commit where the reference commits, and hedge where it hedges
 - **5** — Same confidence throughout. States positions as flatly as the reference states
   them; qualifies in the same places, for the same reasons.
 - **4** — Mostly matched; one or two places softer or firmer than the reference.
-- **3** — Recognisably an opinion, but noticeably more balanced or more strident.
+- **3** — Recognizably an opinion, but noticeably more balanced or more strident.
 - **2** — Hedged into neutrality, or asserting things the reference treats as open.
 - **1** — Refuses to take a position the reference takes, or takes one it does not.
 

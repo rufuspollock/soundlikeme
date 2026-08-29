@@ -41,7 +41,7 @@ writing about your user. But most apparent conflicts are the model excusing bloa
      performance."
 
 8. **Use plain words.** Fancy synonyms do not signal intelligence.
-   - use / not utilise · help / not facilitate · method / not methodology · start / not
+   - use / not utilize · help / not facilitate · method / not methodology · start / not
      commence · about / not with regard to · enough / not sufficient
 
 9. **Cut qualifiers.** "very", "really", "quite", "somewhat", "fairly" almost always weaken.
