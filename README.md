@@ -81,4 +81,4 @@ See [`AGENTS.md`](AGENTS.md) for how agents should work in here, [`NEXT.md`](NEX
 
 ## Status
 
-Early. The skill works; the eval harness has one seeded case and has not been run yet. See [`NEXT.md`](NEXT.md).
+Early. The eval has run once: ceiling 34/35, profile-on candidate 31, no-profile floor 24, with the profile beating the floor on every dimension. Four of the seven dimensions had a one-point range and did not resolve. See [the run](evals/results/2026-08-29-first-run.md) and [`NEXT.md`](NEXT.md).

@@ -8,6 +8,8 @@ Every score needs an evidence quote from the candidate. A score with no quote is
 
 Do not try to work out which text is machine-generated. That is not the question, and guessing at it will distort every score below.
 
+**Gate: invented specifics.** Before scoring anything, check the candidate for names, numbers, dates, titles, or quotations that are not in the reference and could not have come from the shared source material. Any of these makes Concreteness a 1, however well the piece reads and however plausible the invention. Quote the invented span. A fabricated specific is a worse failure than a missing one — do not score around it because the rest is good.
+
 ---
 
 ## 1. Stance
@@ -53,6 +55,8 @@ Word choice and surface conventions.
 - **3** — Broadly right register, but generic. None of the author's characteristic vocabulary.
 - **2** — Wrong register: too formal, too casual, or reaching for words the reference never uses.
 - **1** — Reads as a different person's vocabulary entirely, or wrong spelling convention throughout.
+
+Determine the spelling convention by finding actual evidence in the **reference** — look for `-ize`/`-ise`, `-or`/`-our`, `defense`/`defence` — and quote the word you found. Never assess the convention by general impression of how the prose feels; a judge who calls a text British because it sounds formal will credit a candidate for getting it wrong.
 
 ## 5. Signature moves
 

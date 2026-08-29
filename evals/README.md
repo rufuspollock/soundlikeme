@@ -19,7 +19,8 @@ evals/
     brief.md             de-voiced input
     reference.md         the real published text
   results/
-    YYYY-MM-DD-<label>.md
+    YYYY-MM-DD-<label>.md        the write-up
+    YYYY-MM-DD-<label>/          the three scored texts, kept so a score can be checked
 ```
 
 ## Running a case
