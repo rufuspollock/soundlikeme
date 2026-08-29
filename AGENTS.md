@@ -13,7 +13,7 @@ Two separate jobs live in here and the repo is careful not to conflate them. Rem
 | Need | File |
 |------|------|
 | Project overview, install, usage | `README.md` |
-| What to do next | `NEXT.md` |
+| What to do next | `NEXT.md` — agent work inline; human-blocked work as linked GitHub issues |
 | Dated history of what shipped | `changelog/` |
 | The skill itself | `skills/soundlikeme/SKILL.md` — a router; each command loads one reference |
 | The objective function: how we measure voice match | `evals/README.md` and `evals/rubric.md` |
@@ -31,7 +31,7 @@ Two separate jobs live in here and the repo is careful not to conflate them. Rem
 - **Don't claim eval results that were not run.** `evals/results/` is empty until a run happens. The README and changelog say so plainly and should keep saying so.
 - **Vendored files stay verbatim.** `skills/soundlikeme/references/elements-of-style.md` (public domain, 1918) and `evals/cases/*/reference.md` (published text, typos included) are never edited, reflowed, or spell-corrected.
 - **Frozen briefs.** Once an eval case's `brief.md` has been reviewed by hand it is frozen. Editing it between runs invalidates comparison with earlier results; add a new case instead.
-- There is exactly one `NEXT.md`, at the repo root. Don't create per-folder ones.
+- There is exactly one `NEXT.md`, at the repo root. Don't create per-folder ones. Work an agent can do stays inline in it; anything genuinely blocked on Rufus's judgment becomes a GitHub issue with the detail, indexed from `NEXT.md` rather than described twice.
 
 ## Changelog
 

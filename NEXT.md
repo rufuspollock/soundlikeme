@@ -12,13 +12,20 @@ Three harness bugs were found and two are fixed (the rubric now gates on invente
 
 The substantive finding: the candidate lost points on Rhythm and Signature moves for being *more polished and more evenly paced than Rufus actually is*. The profile names his parenthetical pile-ups and high sentence-length variance as markers, `protections.md` already says "flat is a tell too", both were loaded, and the draft still came out tidier than the man. Regression toward clean prose looks like a constant force rather than a missing rule. Worth trying: instruct `draft` to overshoot the profile's roughness deliberately, and measure whether that moves Rhythm.
 
-## For Rufus
+## Needs you — tracked as issues
 
-- **Give the verdict on the first run.** Read [`evals/results/2026-08-29-first-run/candidate-profile-on.md`](evals/results/2026-08-29-first-run/candidate-profile-on.md) against your real 2011 post and say: publish as-is, edit lightly, or rewrite. The rubric said 31/35. If you'd rewrite it, the rubric is wrong and gets changed — it serves your judgment, not the reverse.
-- **Do the A/B calibration.** `/soundlikeme calibrate`. Ten rounds against the held-out 2011 and 2009 posts. The valuable part isn't which one you pick, it's *what gave it away* — those answers are profile edits nothing else will surface.
-- **Sanity-check the profile.** `skills/soundlikeme/profiles/rufus-pollock.md`. It was generated, then extended with measured markers, and some of it will be wrong. The signature moves and the "does not do" section are where to look hardest. The spelling marker is now American throughout, per your correction.
-- **Say whether the era gap matters.** The profile's samples run 2015–2018; both eval pieces are 2009–2011. If your voice changed over that span, the eval is measuring drift as well as skill failure, and we need a case closer to the sample era.
-- **Dogfood it on something real** and record where it failed. A published piece polished with the skill, with notes on what you had to undo, is worth more than another eval case.
+These are blocked on human judgment and cannot be done by an agent. Each has the detail in the issue; this is the index.
+
+| # | What | Why it's blocked on you |
+|---|---|---|
+| [#1](https://github.com/rufuspollock/soundlikeme/issues/1) | Verdict on the first eval run — publish as-is / edit lightly / rewrite | You are the ground truth the rubric is a proxy for. If the rubric says 31/35 and you'd rewrite it, the rubric changes. |
+| [#2](https://github.com/rufuspollock/soundlikeme/issues/2) | Run the A/B calibration | Only you can say which paragraph is yours, and more importantly *what gave it away*. |
+| [#3](https://github.com/rufuspollock/soundlikeme/issues/3) | Sanity-check the profile's signature moves | Models hallucinate one or two patterns and miss the most important one. You'll spot both in a minute. |
+| [#4](https://github.com/rufuspollock/soundlikeme/issues/4) | Does the 2009–2011 era gap invalidate the cases? | Requires knowing whether your voice changed between then and 2015–2018. |
+| [#5](https://github.com/rufuspollock/soundlikeme/issues/5) | Dogfood on something real, record what you undid | The undo list is where `protections.md` is wrong. |
+| [#6](https://github.com/rufuspollock/soundlikeme/issues/6) | When to publish the v0.2 announcement | Your call on timing. |
+
+#1 is the one that unblocks the most.
 
 ## For the AI (next session)
 
