@@ -56,9 +56,11 @@ These differ by an order of magnitude. Pick deliberately.
 
 | Command | Loads | Rough cost |
 |---|---|---|
-| `audit` / `deslop` | router, tells, protections | ~4.5k tokens |
-| `polish` / `draft` | the above plus concision, profile, self-check | ~8.5k tokens |
-| `polish --deep` | the above plus the full 1918 Strunk text | ~26k tokens |
+| `audit` / `deslop` | router, tells, protections | ~5.3k tokens |
+| `polish` / `draft` | the above plus concision, profile, self-check | ~9.5k tokens |
+| `polish --deep` | the above plus the full 1918 Strunk text | ~27k tokens |
+
+Measured against real file sizes on 2026-08-30, at roughly four characters per token. The profile is the variable: the two shipped profiles run 6.9KB and 8.8KB, both above the 400-600 words `profile-spec.md` asks for, and each extra kilobyte lands on `polish` and `draft`.
 
 Use `--deep` for writing that will be published under the user's name and read by people who know their work. Not for a Slack message.
 

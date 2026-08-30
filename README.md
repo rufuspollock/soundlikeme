@@ -21,11 +21,11 @@ One skill, seven commands, built to the [agentskills.io](https://agentskills.io)
 
 | Command | What it does | Cost |
 |---|---|---|
-| `audit` | Report AI tells with quotes and fixes. Changes nothing. | ~4.5k tokens |
-| `deslop` | Cheap pass. Tells and structures only. No profile needed. | ~4.5k tokens |
-| `polish` | Full pass: tells, concision, your voice profile. | ~8.5k tokens |
-| `polish --deep` | The above plus the full 1918 *Elements of Style*. | ~26k tokens |
-| `draft` | Write new text in your voice from notes or a brief. | ~8.5k tokens |
+| `audit` | Report AI tells with quotes and fixes. Changes nothing. | ~5.3k tokens |
+| `deslop` | Cheap pass. Tells and structures only. No profile needed. | ~5.3k tokens |
+| `polish` | Full pass: tells, concision, your voice profile. | ~9.5k tokens |
+| `polish --deep` | The above plus the full 1918 *Elements of Style*. | ~27k tokens |
+| `draft` | Write new text in your voice from notes or a brief. | ~9.5k tokens |
 | `extract` | Build a voice profile from your writing samples. | -- |
 | `calibrate` | Sharpen a profile with an A/B quiz against your real writing. | -- |
 | `eval` | Score the skill against held-out writing. | -- |
