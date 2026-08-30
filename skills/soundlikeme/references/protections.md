@@ -55,6 +55,8 @@ Protect a match when it is:
 - **Genre-natural.** See above.
 - **The author's actual habit.** If the voice profile names it, the profile wins. Some writers really do use em dashes constantly, or open with a rhetorical question, or end on a call to reflection. Stripping those is the failure this whole skill exists to prevent.
 
+  This overrides the **hard** tier, not just the soft one. The self-answered rhetorical question fires on sight in `tells.md`, and it is the primary structural device of at least one profiled author, at roughly one question every two hundred words — "Why? I think the answer is...", "Does that mean effort doesn't matter? Obviously not." Firing on it would be the same bug the concision rules had with "Furthermore": a general rule about clean prose eating a specific person's real signal. The test is whether the answer does work. A question whose answer is a one-word drum hit ("The result? Chaos.") is the tell. A question whose answer is the next three paragraphs of argument is the skeleton of the piece.
+
 A noun referent is not enough on its own. "A game-changer for the product" is still vague unless the text says what changes.
 
 ## Micro-conventions are voice

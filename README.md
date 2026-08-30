@@ -47,6 +47,8 @@ The score alone means nothing, so two runs bracket it: a **ceiling** (a differen
 
 Plus the control group nobody runs: same brief, profile on versus profile off. If the profile doesn't win, it's decoration.
 
+Alongside it, the half that measures not breaking things: [fixtures](evals/fixtures/README.md) where the right answer is to change almost nothing — human prose, scientific writing, quoted material, code, legal wording — set against fixtures that are genuinely slopped. Any edit to a protected span is a false positive; any surviving tell is a false negative. Both rates are measured.
+
 See [evals/README.md](evals/README.md) and the [design rationale](docs/plans/2026-08-29-objective-function-design.md).
 
 ### `docs/`
@@ -81,6 +83,10 @@ See [`AGENTS.md`](AGENTS.md) for how agents should work in here, [`NEXT.md`](NEX
 
 ## Status
 
-Early, and now measured. The eval has run three times ([1](evals/results/2026-08-29-first-run.md), [2](evals/results/2026-08-29-second-run.md), [3](evals/results/2026-08-29-third-run-pairwise.md)). Absolute scoring turned out too noisy to use; forced-choice pairwise works. Profile-on beats no-profile 4-0, both orders, all judges high confidence.
+Early, and now measured. The eval has run four times ([1](evals/results/2026-08-29-first-run.md), [2](evals/results/2026-08-29-second-run.md), [3](evals/results/2026-08-29-third-run-pairwise.md), [4](evals/results/2026-08-30-fourth-run-second-author.md)). Absolute scoring turned out too noisy to use; forced-choice pairwise works.
 
-The eval has already caught a real bug in the skill: the concision rules were banning "Furthermore" and "Moreover" as filler while the author being imitated uses them as structural joints. See [`NEXT.md`](NEXT.md) and the [open issues](https://github.com/rufuspollock/soundlikeme/issues).
+- **Profile-on beats no-profile 6-0**, across two authors, every comparison run in both orders, every judge high confidence.
+- **Judges pick winners on micro-conventions, not rhetoric** — dash style, connectives, numerals, scare-quote marks, footnote form, spelling convention. Six of six judgments, both authors.
+- **False positives: 0 on 76 protected spans. Detection: 63 of 66 planted tells.** Measured for the first time on 2026-08-30.
+
+The eval has caught two real bugs in the skill. The concision rules were banning "Furthermore" and "Moreover" as filler while the author being imitated uses them as structural joints. And `deslop` deletes where the rules ask it to repair, which is [#7](https://github.com/rufuspollock/soundlikeme/issues/7). See [`NEXT.md`](NEXT.md) and the [open issues](https://github.com/rufuspollock/soundlikeme/issues).

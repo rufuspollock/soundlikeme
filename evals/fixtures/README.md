@@ -21,6 +21,8 @@ evals/fixtures/
 
 `expect.md` is scoring key, not input. Never show it to the agent under test.
 
+Fixture `input.md` files are frozen once they have been run against, the same way a case brief is: editing one invalidates comparison with the recorded outputs. That includes their spelling. Some of them use British forms on purpose — a quoted vendor, a licence clause — and some incidentally; the repo's American-spelling convention covers repo prose, not fixture content.
+
 ## Running
 
 Same shape as the reconstruction eval: markdown, no scripts, subagents do the work.

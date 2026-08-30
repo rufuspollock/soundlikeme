@@ -31,7 +31,7 @@ delve, tapestry, realm, multifaceted, ever-evolving, ever-changing, paradigm shi
 
 **Colon reveal.** Noun phrase, colon, dramatic lowercase payoff. "The detail that makes it work: a second agent grades it." Write it as a sentence.
 
-**Self-answered rhetorical question.** "The result? Chaos." / "Why does this matter? Because..." Fold into a statement.
+**Self-answered rhetorical question.** "The result? Chaos." / "Why does this matter? Because..." Fold into a statement. **Check the profile first.** For some writers this is the load-bearing structure of an argument rather than a drum hit — the test is whether the answer does work, and a question answered by the next three paragraphs is not this tell. See [protections.md](protections.md).
 
 **Faux-insight setup.** "This is the part most people skip." "Here's what they don't tell you." Flatters the writer. Cut the setup; let the claim stand.
 

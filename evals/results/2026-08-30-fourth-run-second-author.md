@@ -2,7 +2,7 @@
 
 Skill version: 0.2 · Cases: `copyright-monopoly` (Rufus Pollock), `mean-people-fail` (Paul Graham, new) · Method: forced-choice pairwise, fresh subagents, every comparison run in both orders with a different judge each way.
 
-Three things happened in this run. A second author was added, the ablation was re-run against him, and run 3's judge instruction was tested for bias. All three came back positive, which is the least interesting of the possible outcomes and has to be read with that in mind.
+Four things happened in this run. A second author was added and the ablation re-run against him, run 3's judge instruction was tested for bias, the false-positive and false-negative rates were measured for the first time, and `polish` was measured for the first time. All four came back positive, which is the least interesting of the possible outcomes and has to be read with that in mind. The two places this run found something wrong are the `polish` residue in section 4 and the deletion behavior in section 3, and those are the parts worth reading.
 
 ## 1. The ablation holds on a second author
 
@@ -106,6 +106,29 @@ Not a false positive by the fixture's own scoring, but visible in two detection 
 
 `deslop.md` says the pass does not restructure and does not improve. Deleting a sentence because it contains a repairable pattern is a third thing, and neither the command file nor `protections.md` currently names it. Filed as [#7](https://github.com/rufuspollock/soundlikeme/issues/7).
 
+## 4. `polish` measured for the first time, by degrade and restore
+
+Reconstruction measures `draft`. `polish` takes the user's own rough text, which reconstruction cannot simulate. The shape that works instead: take a real piece, degrade it into bland AI-ish prose in a separate pass, freeze that as the fixture input, run `polish` on it with the author's profile, and compare.
+
+Fixture: `evals/fixtures/polish/being-a-noob/`, from *Being a Noob* (January 2020), a third held-out Paul Graham essay. The degradation was written by an agent that had only the original, told to keep every claim and specific and lose only the voice. It came back with three section headers including one called `Conclusion`, contractions expanded throughout, signposted transitions ("This raises an important question"), hedges stacked onto flat claims, and diction raised — "relocate" for "move", "determine" for "figure out".
+
+| Comparison | Order 1 | Order 2 | Result |
+|---|---|---|---|
+| Polished vs degraded input, reference = the original | polished (high) | polished (high) | **polished, 2-0** |
+
+`polish` put back the contractions, deleted all three headers, cut the summarising close, restored "figure out", and dropped the hedges. Both judges named the headers and the contraction rate first.
+
+This is a floor, not a target — beating a deliberately de-voiced text is the least that should happen — and it was worth running because until today nobody knew whether even that held.
+
+### What `polish` did not put back
+
+More useful than the verdict. Both judges, unprompted and independently, listed the same residue:
+
+- **The clipped ending.** The original closes "the more you feel like a noob, the better." The polished version closes "the better off you are likely to be." One judge: "losing the clipped final beat that is the piece's most characteristic gesture."
+- **Paragraph-initial "And".** The original has "And yet today I realized", "And the word 'noob' is certainly not a compliment". The polished version smooths these into "But I recently realized" and drops the "But" from the pivot question. Sentence-initial coordinators are the single highest-rate marker in the Paul Graham profile — 7 per thousand words — and `polish` still eroded them.
+
+Both are the same failure: a pass that restores vocabulary and structure and still cannot stop itself softening an abrupt edge. The profile names the habit explicitly and the profile did not win. That is a sharper version of the run 3 finding, and it suggests the pull toward smooth is stronger than a marker line can counteract on its own. `draft.md` has an "Aim past clean" instruction for exactly this pressure; `polish.md` does not. Worth testing whether adding one moves this.
+
 ## Limits
 
 - Two authors is better than one and is not many. Both are male anglophone essayists writing argumentative nonfiction, both profiles were built by the same model, and both cases are single pieces.
@@ -113,3 +136,5 @@ Not a false positive by the fixture's own scoring, but visible in two detection 
 - The judges, the drafters and the profile-builder are all the same model family. A judge that shares a prior with the drafter may be rewarding the drafter's habits rather than the author's.
 - The detection fixtures were written by the same person who wrote the expectations, one day after reading `tells.md`. They test the list against itself. Real slopped text found in the wild would be a better fixture and nobody has collected any.
 - The floor draft ran long — 1,396 words against the reference's 1,141 and the profile-on draft's 1,265. Length is not what the judges cited, but it is an uncontrolled difference.
+- The polish fixture's degradation was written by the same model family that then reversed it. `polish` may be unusually good at undoing its own defaults. A degradation from a different model, or real rough writing from a real person, is a harder test and neither exists here.
+- The polish comparison is against the degraded input, not against the original. How much of the gap actually closed is unmeasured.

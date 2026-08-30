@@ -34,7 +34,11 @@ Forced-choice comparison is robust to that noise and produced clean, order-invar
 3. Ask one question: which reads more like the same person who wrote the reference? Forced choice, no ties, plus confidence and quoted evidence.
 4. Run it twice with the order swapped, using a different judge each time. A result that flips with order is not a result.
 
-The judge must be told to judge voice, not quality — "the more polished piece is often the less faithful one" — or it will reward good writing. It must also get the brief: without it the fabrication check cannot work, because the judge cannot tell an invented specific from one that was supplied.
+The judge must be told to judge voice, not quality, or it will reward good writing. It must also get the brief: without it the fabrication check cannot work, because the judge cannot tell an invented specific from one that was supplied.
+
+Until run 4 the instruction also carried "the more polished piece is often the less faithful one". True, and suspected of tilting judges toward whichever draft looked rougher. Run 4 re-ran a run 3 comparison without it and got the same winner in both orders at high confidence, so the sentence is gone: one confound lighter, and the finding it might have produced survives without it. Do not put it back.
+
+Both drafters must be fresh agents that have never seen the reference and are forbidden from going to look for it. A draft written by a session that has read the piece it is being compared against measures exposure, not the skill — run 3 had this problem and did not know it.
 
 Run pairwise for verdicts. Run the rubric below when you want to know *which dimension* is off, and treat the numbers as indicative.
 
@@ -68,16 +72,22 @@ Same brief, two drafts — profile on, profile off. A blind judge picks which is
 
 If profile-on does not win reliably, the profile is doing nothing. That is a real finding. Report it plainly rather than explaining it away.
 
-Run this pairwise, not by comparing absolute scores. As of 2026-08-29 it stands at 4-0 to profile-on, both orders, all judges high confidence.
+Run this pairwise, not by comparing absolute scores. As of 2026-08-30 it stands at 6-0 to profile-on across two authors, every comparison in both orders, all judges high confidence.
 
 ## Protection and detection fixtures
 
 Voice fidelity is half the job. Not breaking things is the other half.
 
-- **Protection:** already-human prose, scientific text where passive voice is correct, quoted material, code, precise legal wording. An edit to a protected span is a failure regardless of anything else in the run.
+- **Protection:** already-human prose, scientific text where passive voice is correct, quoted material, code, precise legal wording, and an author's genuine habit that the tell list marks as a hard tell. An edit to a protected span is a failure regardless of anything else in the run.
 - **Detection:** genuinely slopped text. A surviving hard tell is a miss.
 
-Every new tell added to `tells.md` should arrive with a protection fixture in the same change. A tell without a protection is how a banlist becomes a blunt instrument.
+These live in [fixtures/](fixtures/), which has its own README covering how to run and score them. As of 2026-08-30: zero false positives on 76 protected spans, 63 of 66 planted tells caught.
+
+Every new tell added to `tells.md` should arrive with a protection case in `protections.md` and a fixture here, in the same change. A tell without a protection is how a banlist becomes a blunt instrument; a tell nobody has measured a false-positive rate for is a guess.
+
+## Polish fixtures
+
+Reconstruction measures `draft` only. `polish` gets its own family, built by degrade-and-restore: take a real piece, degrade it into bland AI-ish prose in a separate pass, freeze that as the input, then measure how much of the original the skill puts back. See [fixtures/polish/README.md](fixtures/polish/README.md).
 
 ## Writing a brief
 
@@ -102,7 +112,11 @@ Draft the brief, then read it cold and ask whether you could tell who wrote the 
 
 ## Practice authors
 
-One profile overfits. Carry two or three other authors with large, freely readable, distinctive corpora. Paul Graham is the obvious first: enormous, very distinctive, plainly available on the web. Freely available web corpora only — clean provenance keeps the repo shareable and there is no shortage of it.
+One profile overfits. Carry two or three other authors with large, freely readable, distinctive corpora. Freely available web corpora only — clean provenance keeps the repo shareable and there is no shortage of it.
+
+Paul Graham was the first, added 2026-08-30: seven essays in the profile, three held out, the `mean-people-fail` case seeded from one of them. He was the right choice because his micro-conventions are close to the inverse of Rufus Pollock's — short sentences against long, rare spaced em dashes against constant spaced en dashes, double scare quotes against single, numbers as words against numerals, zero "Furthermore" in 13,800 words against it being a structural joint. Two profiles that push a drafter in opposite directions on the same dials are worth more than two that agree.
+
+The third should break the pattern rather than extend it. Both current authors are male anglophone essayists writing argumentative nonfiction, and both profiles were built by the same model. Where the profile mechanism stops working is more informative than another win.
 
 A technique that only works on one author is not a technique.
 
@@ -142,6 +156,7 @@ Author verdict: publish as-is / edit lightly / rewrite
 
 ## Known limits
 
-- Reconstruction measures `draft`. It does not directly measure `polish`, whose input is the user's own rough text. `polish` needs its own fixtures — a real piece degraded into AI-ish prose, then restored. Not built yet.
+- Reconstruction measures `draft`. `polish` has its own fixtures now, but they measure restoration of a degraded published piece, which already has the author's structure in it. Whether `polish` improves genuinely rough writing without flattening it is still unmeasured and may need the author in the loop.
 - Judge models may reward fluent generic prose over accurate voice matching. The ceiling measurement partly catches this: if a real second piece by the author scores below the generic floor, the judge is broken.
 - Seven dimensions scored by one judge on one reference is a noisy signal. Treat a single-point change as noise; look for movement across cases.
+- The drafters, the judges and the profile-builder are all the same model family. A judge sharing a prior with the drafter may be rewarding the drafter's habits rather than the author's. Nothing here rules this out, and it is the largest unexamined threat to every result in the folder.
