@@ -6,6 +6,7 @@ registers: general-idea essay (all seven; PG writes essentially one register)
 held_out:
   - https://www.paulgraham.com/mean.html
   - https://www.paulgraham.com/orth.html
+  - https://www.paulgraham.com/noob.html
 ---
 
 # Voice Profile: Paul Graham
