@@ -6,10 +6,11 @@ Companion to `research.md`, which covers *techniques*. This covers *shipped impl
 
 ## 1. The field
 
-Eight projects matter. They sit on a spectrum from "one markdown file" to "skill + deterministic scanners + eval harness + CI".
+Nine projects matter. They sit on a spectrum from "one markdown file" to "skill + deterministic scanners + eval harness + CI". One of them — `blader/humanizer`, ~39k stars — is the de facto default in the category; the first version of this survey missed it entirely (see Appendix A for why, and what to do differently on a re-run).
 
 | Project | Size | What it is | Standout idea |
 |---|---|---|---|
+| [blader/humanizer](https://github.com/blader/humanizer) | thin SKILL, no scripts | The one everyone actually installs — ~39k stars. 35 patterns from Wikipedia's "Signs of AI writing", single pass + self-check, sample-based voice matching, 3 I/O modes | A tight, well-formed "do not flag" list (temporal carve-out; "most of the web is unsourced") |
 | [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop) | 2.6KB SKILL + 3 refs | The minimal ancestor. 8 rules, 12 quick checks, 5-dimension score out of 50 | Scoring rubric as a stopping condition |
 | [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop) | 8KB SKILL + 44KB refs | stop-slop expanded, aimed at scientific writing | Domain awareness — passive voice is *correct* in a methods section |
 | [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop) | 1 SKILL + `eval.md` | Best-written single-file editor skill | `eval.md`: a self-check the model runs against its own output before returning |
@@ -23,7 +24,7 @@ Also relevant but not a skill: [Wikipedia:Signs of AI writing](https://en.wikipe
 
 ## 2. What everyone agrees on
 
-The banlists have converged. Across all eight, the same items recur, and our current `write-like-me` Step 3 already has most of them:
+The banlists have converged. Across all nine, the same items recur, and our current `write-like-me` Step 3 already has most of them:
 
 - **Words:** delve, tapestry, realm, leverage, utilize, facilitate, foster, robust, streamline, empower, harness, elevate, embark, paradigm shift, game-changer, transformative, meticulous, intricate, multifaceted, ever-evolving
 - **Phrases:** "it's worth noting", "in today's X landscape", "at the end of the day", "let's dive in", "the reality is"
@@ -42,6 +43,7 @@ A naive banlist produces a new, equally detectable style: clipped, staccato, opi
 - **avoid-ai-writing — tiered vocabulary.** Tier 1A fires on sight (`delve`). Tier 1B is a clarity swap (`utilize`→`use`). Tier 2 fires only *in a cluster*. Tier 3 fires only at high density or when 3+ boilerplate phrases stack. A single hit is not evidence.
 - **unslop — the decision rule.** "A scanner match alone never authorizes an edit." Protect literal, domain-valid, quoted, attributed, or genre-natural uses. "Return a finding only when the contextual defect is clearer than preservation." Prefer a no-op to an uncertain edit.
 - **better-writing / deslop — genre exemptions.** Passive voice is right in a methods section. Warmth is right in a support email. "Never edit on a single feature." "The most durable tell is uniform tone that never adapts to audience or genre."
+- **humanizer — the "do not flag" list.** Six explicit carve-outs: polish or formal words alone, transition words in isolation, single em dashes or short sentences, unsourced claims ("most of the web is unsourced"), secondhand text in quotations or titles, and anything edited before November 2022 (pre-ChatGPT). Requires multiple co-occurring patterns as evidence, never an isolated phrase.
 
 ### 3.2 Minimum effective edit + byte-for-byte preservation
 
@@ -88,7 +90,7 @@ Everyone converged on modes, and they map onto the levels you wanted:
 | Draft *in* the voice | `mimic` | voice profiles | voice calibration |
 | Build the voice | `teach` | — | — |
 
-Two-pass rewriting shows up twice independently: first pass removes the obvious patterns, second pass catches the tells the first pass *introduced*.
+Two-pass rewriting shows up twice independently: first pass removes the obvious patterns, second pass catches the tells the first pass *introduced*. humanizer, despite its adoption, has no levels — just three I/O modes (pasted text / file / embedded) that change what it returns, not how hard it edits, and a single pass with a self-check rather than a true second pass.
 
 ## 4. What `impeccable` contributes
 
@@ -119,8 +121,8 @@ obra's actual shape: a ~40-line SKILL.md that is just an index of the rule names
 
 Slop removal is solved to the point of commodity. Voice is not.
 
-- Of the eight, only unslop and the Rossmann repo do serious voice work, and only unslop is generic.
-- Nobody combines: corpus-derived voice profile + interactive calibration + quantitative voice scoring + tiered levels + a concision floor.
+- Of the nine, only unslop and the Rossmann repo do serious voice work. humanizer has voice matching, but it is sample-based — it compares habits (sentence length, punctuation rate, repeated phrases) against one pasted sample, with no corpus harvest and no statistical fingerprint. unslop is the only generic, corpus-driven one.
+- Nobody combines: corpus-derived voice profile + interactive calibration + quantitative voice scoring + tiered levels + a concision floor. humanizer's 39k stars are for the slop-removal floor with a light voice-match bolt-on, not for any of this.
 - Nobody handles the **organizational** case well (shared voice across multiple authors), which the README already claims as a use case.
 
 So: don't try to out-banlist `avoid-ai-writing`. Compete on voice fidelity, on honest levels (cheap pass vs. full pass), and on the extraction/calibration loop.
@@ -146,6 +148,7 @@ So: don't try to out-banlist `avoid-ai-writing`. Compete on voice fidelity, on h
 
 ## Sources
 
+- [blader/humanizer](https://github.com/blader/humanizer)
 - [hardikpandya/stop-slop](https://github.com/hardikpandya/stop-slop)
 - [stephenturner/skill-deslop](https://github.com/stephenturner/skill-deslop)
 - [petergyang/no-ai-slop](https://github.com/petergyang/no-ai-slop)
@@ -160,3 +163,29 @@ So: don't try to out-banlist `avoid-ai-writing`. Compete on voice fidelity, on h
 - [Wikipedia:Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing)
 - [Peter Yang: Use My /No-AI-Slop Skill](https://creatoreconomy.so/p/use-my-no-ai-slop-skill-to-remove-20-ai-slop-patterns)
 - [Gabriel Cassady: Stop Slop](https://gabrielcassady.com/tools/stop-slop-claude-skill-to-remove-ai-writing-tells/)
+
+## Appendix A: How this survey was done, and what to fix on a re-run
+
+The first pass (Aug 2026) missed `blader/humanizer` — ~39k stars, the most-installed skill in the category. Recording the method here so a re-run does not repeat the gap.
+
+### Method used the first time
+
+1. GitHub keyword search on `slop`, `deslop`, `unslop`, `ai-slop`, `anti-slop`, `ai-writing`.
+2. GitHub topic browse on `claude-skill` / `agent-skills`.
+3. Followed the citation graph outward from two blog posts (Peter Yang, Gabriel Cassady) and the Wikipedia "Signs of AI writing" page.
+4. Stopped once the same ~8 repos kept recurring across all three paths.
+
+### Why humanizer slipped through
+
+- **It lives in a different keyword cluster.** The name is "humanizer", not a slop-family word. Every repo the search found has `slop`/`deslop` in the name or is cross-linked from a slop blog post. The search never queried `humanize`, `humanizer`, `sound human`, `AI-sounding`, `rewrite AI text`.
+- **The term is SEO-saturated.** "AI humanizer" is a crowded commercial category — dozens of SaaS products. A plain web search drowns in them; only a GitHub search *sorted by stars* cuts through, and that was never run.
+- **It sits outside the de-slop citation clique.** The blogs traversed in step 3 cite each other. humanizer is popular through other channels (marketplace installs, Twitter) and none of those blogs linked it. A citation-graph crawl systematically misses anything popular outside the clique it starts in.
+- **No sort-by-stars pass at all.** The single cheapest check — topic pages or a free-text search sorted by stars — was skipped. 39k stars is impossible to miss that way.
+
+### On a re-run, do all of these
+
+- **Sort by stars, not relevance.** Run GitHub search sorted by stars for `topic:agent-skills`, `topic:claude-code`, `topic:claude-skill`, plus free-text `AI writing`, `humanize AI`, `AI slop`, `sound human`. Sanity check: if a category has a 10k+ star project the survey does not mention, the discovery pass was incomplete.
+- **Query every synonym cluster, not just one:** {slop, deslop, unslop} · {humanize, humanizer, human-sounding} · {AI tells, AI detector, AI-sounding} · {voice match, style match, write like me, mimic, ghostwrite} · {tone of voice}.
+- **Check the skill registries directly:** the npm skills CLI registry, the Claude Code plugin marketplace, smithery, and any `awesome-claude-skills` lists.
+- **Record star count and last-commit date for every entry.** Adoption is signal; the first pass tracked neither. Put both in the section 1 table.
+- **Do the citation-graph crawl last.** It is for depth on repos already found, not for discovery.
