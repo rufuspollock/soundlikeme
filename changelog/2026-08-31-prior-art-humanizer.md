@@ -4,4 +4,4 @@ title: The prior-art survey was missing the category's most-used skill
 promote: false
 ---
 
-`blader/humanizer` (~39k stars, the de facto default for slop removal) was absent from the survey; it is now in the table and the differentiation section, and a new appendix records how the first pass was done, why a keyword-and-citation-graph search missed a project that large, and to sort by stars on any re-run.
+`blader/humanizer` (~39k stars, the de facto default for slop removal) was absent from the survey; it is now in the table and the differentiation section, and a new appendix records how the first pass was done, why a keyword-and-citation-graph search missed a project that large, and to sort by stars on any re-run. A follow-on doc, `docs/humanizer-vs-soundlikeme.md`, runs `polish` head-to-head against humanizer on one document: both strip the same tells identically, every difference traces to the stored voice profile, and the conclusion is to keep the profile-and-eval machinery while considering vendoring humanizer's pattern list in place of our own.

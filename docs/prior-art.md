@@ -127,6 +127,8 @@ Slop removal is solved to the point of commodity. Voice is not.
 
 So: don't try to out-banlist `avoid-ai-writing`. Compete on voice fidelity, on honest levels (cheap pass vs. full pass), and on the extraction/calibration loop.
 
+A worked head-to-head against humanizer on one document is in [humanizer-vs-soundlikeme.md](humanizer-vs-soundlikeme.md): both strip the same tells identically, every difference traces to the stored profile, and the conclusion is to keep the profile-and-eval machinery but consider vendoring humanizer's pattern list in place of `tells.md`.
+
 ## 7. Concrete steals, ranked by value/effort
 
 1. **`eval.md` self-check.** One file. Biggest single quality jump. (petergyang)
