@@ -52,6 +52,7 @@ Roughly in order:
 5. **A different judge model.** The drafters, the judges and the profile-builder are all the same model family. A judge sharing a prior with the drafter may be rewarding the drafter's habits rather than the author's. Nothing in the repo currently rules this out, and it is the largest unexamined threat to every result in it.
 6. **Both profiles are two to three times the length the spec asks for.** `profile-spec.md` says 400-600 words and warns that a profile past a page stops being loaded properly. Rufus is ~1,150 words, Paul Graham ~1,460, and the overrun lands directly on the `polish` and `draft` token costs. Either the spec is wrong or the profiles are, and this is one of the few questions in the repo that the harness can settle on its own: trim a profile to spec, run the ablation trimmed against full, both orders. If the trimmed one wins or ties, the Markers section is padding and the spec was right.
 7. **Re-run the ablation after any profile-format change.** Profile on versus profile off, blind judge, both orders. Cheapest test here and the one most likely to produce an uncomfortable answer.
+8. **There is no `LICENSE` file.** `SKILL.md` declares MIT and the README repeats it, but nothing in the repo root backs that up, which matters for a project whose whole pitch is that people should install it. Adding one needs the copyright line, so it is Rufus's to drop in rather than an agent's to guess at.
 
 ## Deliberately not doing
 
